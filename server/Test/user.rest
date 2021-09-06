@@ -1,0 +1,14 @@
+// login user
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "nasser@example.com",
+    "password": "123456"
+    
+}
+
+# return logged user
+GET http://localhost:5000/api/users/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTEyOGZkZTkzMTllYzI0YjA3ZGNhYjUiLCJpYXQiOjE2Mjg3NDk2MDcsImV4cCI6MTYzMTM0MTYwN30.NoyfIDXKB2PNV8Hl5CTrBEwoVfV91bL0G3G18f0-0OU
+
